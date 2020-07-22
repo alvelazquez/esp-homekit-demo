@@ -79,7 +79,7 @@ homekit_accessory_t *accessories[] = {
             HOMEKIT_SERVICE(
                 ACCESSORY_INFORMATION,
                 .characteristics=(homekit_characteristic_t*[]) {
-                    HOMEKIT_CHARACTERISTIC(NAME, "Contact Sensor"),
+                    HOMEKIT_CHARACTERISTIC(NAME, "Sensor de Movimiento"),
                     HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP"),
                     HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "2012346"),
                     HOMEKIT_CHARACTERISTIC(MODEL, "DS1"),
