@@ -81,7 +81,7 @@ homekit_accessory_t *accessories[] = {
                 .characteristics=(homekit_characteristic_t*[]) {
                     HOMEKIT_CHARACTERISTIC(NAME, "Contact Sensor"),
                     HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP"),
-                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "2012345"),
+                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "2012346"),
                     HOMEKIT_CHARACTERISTIC(MODEL, "DS1"),
                     HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
                     HOMEKIT_CHARACTERISTIC(IDENTIFY, door_identify),
@@ -106,7 +106,7 @@ homekit_accessory_t *accessories[] = {
 
 homekit_server_config_t config = {
     .accessories = accessories,
-    .password = "111-11-111"
+    .password = "333-12-412"
 };
 
 
