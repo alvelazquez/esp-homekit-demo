@@ -12,7 +12,7 @@
 #include <homekit/characteristics.h>
 #include "wifi.h"
 
-const int led_gpio = 12;
+const int led_gpio = 4;
 
 #define MOTION_SENSOR_GPIO 2
 
