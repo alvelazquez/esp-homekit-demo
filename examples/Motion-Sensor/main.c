@@ -14,7 +14,7 @@
 
 const int led_gpio = 4;
 
-#define MOTION_SENSOR_GPIO 2
+#define MOTION_SENSOR_GPIO 12
 
 
 static void wifi_init() {
