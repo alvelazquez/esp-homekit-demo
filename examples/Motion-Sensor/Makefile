@@ -3,9 +3,8 @@ PROGRAM = main
 EXTRA_COMPONENTS = \
 	extras/http-parser \
 	extras/dhcpserver \
-	$(abspath ../../components/esp-8266/wifi_config) \
 	$(abspath ../../components/common/wolfssl) \
-	$(abspath ../../components/common/cJSON) \
+	$(abspath ../../components/esp8266-open-rtos/cJSON) \
 	$(abspath ../../components/common/homekit)
 
 FLASH_SIZE ?= 32
