@@ -10,7 +10,7 @@
 
 #include <homekit/homekit.h>
 #include <homekit/characteristics.h>
-#include <wifi_config.h>
+#include "wifi.h"
 
 const int led_gpio = 2;
 
