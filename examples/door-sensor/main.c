@@ -111,7 +111,7 @@ homekit_server_config_t config = {
 
 
 void user_init(void) {
-    uart_set_baud(0, 9600);
+    uart_set_baud(0, 115200);
 
     wifi_init();
     printf("Using Sensor at GPIO%d.\n", REED_PIN);
