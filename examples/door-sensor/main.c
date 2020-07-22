@@ -79,11 +79,11 @@ homekit_accessory_t *accessories[] = {
             HOMEKIT_SERVICE(
                 ACCESSORY_INFORMATION,
                 .characteristics=(homekit_characteristic_t*[]) {
-                    HOMEKIT_CHARACTERISTIC(NAME, "Contact Sensor"),
-                    HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP"),
-                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "2012345"),
-                    HOMEKIT_CHARACTERISTIC(MODEL, "DS1"),
-                    HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
+                    HOMEKIT_CHARACTERISTIC(NAME, "Sensor de Movimiento 2"),
+                    HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP2"),
+                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "20123472"),
+                    HOMEKIT_CHARACTERISTIC(MODEL, "DS2"),
+                    HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.2"),
                     HOMEKIT_CHARACTERISTIC(IDENTIFY, door_identify),
                     NULL
                 },
@@ -106,12 +106,12 @@ homekit_accessory_t *accessories[] = {
 
 homekit_server_config_t config = {
     .accessories = accessories,
-    .password = "111-11-111"
+    .password = "333-12-982"
 };
 
 
 void user_init(void) {
-    uart_set_baud(0, 9600);
+    uart_set_baud(0, 115200);
 
     wifi_init();
     printf("Using Sensor at GPIO%d.\n", REED_PIN);
