@@ -16,6 +16,19 @@ const int led_gpio = 2;
 
 #define MOTION_SENSOR_GPIO 12
 
+
+static void wifi_init() {
+    struct sdk_station_config wifi_config = {
+        .ssid = WIFI_SSID,
+        .password = WIFI_PASSWORD,
+    };
+
+    sdk_wifi_set_opmode(STATION_MODE);
+    sdk_wifi_station_set_config(&wifi_config);
+    sdk_wifi_station_connect();
+}
+
+
 void led_write(bool on) {
         gpio_write(led_gpio, on ? 0 : 1);
 }
@@ -103,8 +116,7 @@ homekit_server_config_t config = {
         .setupId="9SW7",
 };
 
-void on_wifi_ready() {
-}
+
 
 void create_accessory_name() {
         uint8_t macaddr[6];
@@ -124,8 +136,7 @@ void user_init(void) {
           gpio_init();
 
         create_accessory_name();
-
-        wifi_config_init("Motion Sensor", NULL, on_wifi_ready);
+      wifi_init();
         gpio_init();
 
 
