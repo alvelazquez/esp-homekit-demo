@@ -79,11 +79,11 @@ homekit_accessory_t *accessories[] = {
             HOMEKIT_SERVICE(
                 ACCESSORY_INFORMATION,
                 .characteristics=(homekit_characteristic_t*[]) {
-                    HOMEKIT_CHARACTERISTIC(NAME, "Sensor de Movimiento"),
-                    HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP"),
-                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "2012347"),
-                    HOMEKIT_CHARACTERISTIC(MODEL, "DS1"),
-                    HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
+                    HOMEKIT_CHARACTERISTIC(NAME, "Sensor de Movimiento 2"),
+                    HOMEKIT_CHARACTERISTIC(MANUFACTURER, "ObjP2"),
+                    HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "20123472"),
+                    HOMEKIT_CHARACTERISTIC(MODEL, "DS2"),
+                    HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.2"),
                     HOMEKIT_CHARACTERISTIC(IDENTIFY, door_identify),
                     NULL
                 },
@@ -92,7 +92,7 @@ homekit_accessory_t *accessories[] = {
                 CONTACT_SENSOR,
                 .primary=true,
                 .characteristics=(homekit_characteristic_t*[]) {
-                    HOMEKIT_CHARACTERISTIC(NAME, "Kontakt"),
+                    HOMEKIT_CHARACTERISTIC(NAME, "Kontakt2"),
                     &door_open_characteristic,
                     NULL
                 },
